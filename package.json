@@ -1,0 +1,41 @@
+{
+  "name": "ssl-checker-node-api",
+  "version": "0.0.1",
+  "description": "A tiny NodeJS module to check SSL expiry Date and Day.",
+  "main": "./lib/cmjs/index.js",
+  "module": "./lib/cmjs/index.js",
+  "es2015": "./lib/es2015/index.js",
+  "unpkg": "./lib/umd/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:es2015 && npm run build:umd && npm run build:cmjs",
+    "build:es2015": "tsc --module es2015 --outDir lib/es2015",
+    "build:umd": "tsc --module umd --outDir lib/umd",
+    "build:cmjs": "tsc --module commonjs --outDir lib/cmjs",
+    "format": "prettier  --write '**/*.{ts,md}'",
+    "prepare": "npm run build",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/ssl-checker-node-api.git"
+  },
+  "keywords": [
+    "ssl",
+    "checker"
+  ],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskian/ssl-checker-node-api/issues"
+  },
+  "homepage": "https://github.com/mskian/ssl-checker-node-api#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
