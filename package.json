@@ -1,6 +1,6 @@
 {
   "name": "ssl-checker-node-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny NodeJS module to check SSL expiry Date and Day.",
   "main": "./lib/cmjs/index.js",
   "module": "./lib/cmjs/index.js",
