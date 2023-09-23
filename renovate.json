@@ -1,6 +1,21 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+	"extends": [
+		"config:base"
+	],
+	"automerge": true,
+	"major": {
+		"automerge": false
+	},
+	"lockFileMaintenance": {
+		"enabled": false,
+		"automerge": false
+	},
+	"labels": [
+		"renovate"
+	],
+	"rangeStrategy": "bump",
+	"bumpVersion": null,
+	"semanticCommits": true,
+	"timezone": "Asia/Kolkata",
+	"schedule": "on saturday and sunday"
 }
