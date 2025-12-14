@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/mskian/ssl-checker-node-api#readme",
   "devDependencies": {
-    "@types/node": "^22.19.2",
+    "@types/node": "^22.19.3",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3"
   },
